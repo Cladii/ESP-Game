@@ -1,0 +1,55 @@
+.root {
+    -fx-base: #bfe7ff; 
+    -fx-accent: #0096c9 ;
+    -fx-default-button: #abd8ed ;
+    -fx-focus-color: #039ed3;
+    -fx-faint-focus-color: #039ed322;
+    -fx-focused-text-base-color : ladder(
+        -fx-selection-bar,
+        -fx-light-text-color 45%,
+        -fx-dark-text-color 46%,
+        -fx-dark-text-color 59%,
+        -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;  
+
+    -fx-font-family: verdana;  
+}
+
+GridPane {
+    -fx-hgap: 5;
+    -fx-vgap: 5;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+}
+
+.button {
+    -fx-background-color: 
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.list-view {
+    -fx-border-image-width: 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;    
+}
+
+.text-field {
+    -fx-font-family: Consolas;
+    -fx-font-size: 15;
+    -fx-text-fill: #0000ff;
+    -fx-display-caret:true;
+}
